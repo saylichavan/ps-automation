@@ -24,7 +24,7 @@ process.on('unhandledRejection', () => { });
                 await page.quit();
             });
 
-            it('Enter username and password ', async () => {
+            it('Entered username and password Successfully ', async () => {
                 const userNameExists = await page.findUserName();
                 const passwordExists = await page.findPassword();
 
@@ -32,10 +32,17 @@ process.on('unhandledRejection', () => { });
                 expect(passwordExists.inputEnabled).to.equal(true);
             });
 
-            it('Validate you have logged in ', async () => {
+            it('Validate you have logged in Successfully ', async () => {
                 const result = await page.authenticate();
                 expect(result).to.be.equals(true);
             });
+
+            it('Validate logout Successfully' , async() => {
+                const logoutb = await page.logout();
+                expect(logoutb).to.be.equals(true);
+
+            });
+
         });
     } catch (ex) {
         console.log(new Error(ex.message));

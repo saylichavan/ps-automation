@@ -2,5 +2,6 @@
 module.exports = {
     resultText: 'Logout',
     usernameInputSelectorId: 'username', // id or class names of element
-    passwordInputSelectorId: 'password'
+    passwordInputSelectorId: 'password',
+    logouttext: 'Logout'
 };
