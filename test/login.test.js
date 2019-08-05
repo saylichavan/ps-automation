@@ -10,7 +10,7 @@ process.on('unhandledRejection', () => { });
 
 (async function example() {
     try {
-        describe('Internet Herokuapp automated testing', async function () {
+        describe('Internet Herokuapp Login automated testing', async function () {
             this.timeout(5000);
             let driver, page;
 
