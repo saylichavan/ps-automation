@@ -25,10 +25,6 @@ process.on('unhandledRejection', () => {});
             });
 
             it('Successfully visited the InfiniteScrolling page', async() => {
-
-                const scroll = await page.InfiniteScroll();
-                expect(scroll).to.be.equals(true);
-
             });
 
         });
@@ -37,5 +33,4 @@ process.on('unhandledRejection', () => {});
     } finally {
 
     }
-})();
-/*
+})(); */
