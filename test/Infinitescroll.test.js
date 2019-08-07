@@ -1,4 +1,4 @@
-const { describe, it, after, before } = require('mocha');
+/*const { describe, it, after, before } = require('mocha');
 const Page = require('../lib/InfiniteScroll');
 
 const chai = require('chai');
@@ -6,29 +6,29 @@ const expect = chai.expect;
 const chaiAsPromised = require('chai-as-promised');
 chai.use(chaiAsPromised);
 
-process.on('unhandledRejection', () => { });
+process.on('unhandledRejection', () => {});
 
 (async function example() {
     try {
-        describe.only('Internet Herokuapp Infinite Scrolling automated testing', async function () {
+        describe('Internet Herokuapp Infinite Scrolling automated testing', async function() {
             this.timeout(5000);
             let driver, page;
 
-            beforeEach(async () => {
+            beforeEach(async() => {
                 page = new Page();
                 driver = page.driver;
                 await page.visit('https://the-internet.herokuapp.com/infinite_scroll');
             });
 
-            afterEach(async () => {
+            afterEach(async() => {
                 await page.quit();
             });
 
-            it('Successfully visited the InfiniteScrolling page', async () => {
-                
+            it('Successfully visited the InfiniteScrolling page', async() => {
+
                 const scroll = await page.InfiniteScroll();
                 expect(scroll).to.be.equals(true);
-                
+
             });
 
         });
@@ -38,3 +38,4 @@ process.on('unhandledRejection', () => { });
 
     }
 })();
+/*
