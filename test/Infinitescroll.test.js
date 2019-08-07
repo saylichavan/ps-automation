@@ -1,4 +1,7 @@
 /*const { describe, it, after, before } = require('mocha');
+=======
+const { describe, it, after, before } = require('mocha');
+>>>>>>> ffa6ddafac4bbe5d5001147ec2a79a5c5bc003b6
 const Page = require('../lib/InfiniteScroll');
 
 const chai = require('chai');
